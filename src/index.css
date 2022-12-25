@@ -64,7 +64,6 @@ body {
     align-items: center;
     height: 50px;
     width: 85%;
-    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -179,4 +178,3 @@ body {
     *white-space: nowrap;
     overflow: hidden;
 }
-

@@ -20,7 +20,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "build-css": "node-sass src/ -o src/css/ --watch",
+        "build-css": "css-concat src/sass/*.scss src/index.css -o src/index.css",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "test:all": "react-scripts test --watchAll --collect-coverage",
@@ -71,6 +71,7 @@
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.47.0",
         "@typescript-eslint/parser": "^5.47.0",
+        "css-concat": "^0.0.4",
         "eslint-config-prettier": "^8.5.0",
         "node-sass": "^7.0.3"
     }

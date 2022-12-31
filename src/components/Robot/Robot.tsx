@@ -26,6 +26,7 @@ export const RobotGenerator = ({
                     <h3>Endurance</h3>
                     <p>{endurance}</p>
                 </div>
+                <button className="HireButton">Hire</button>
             </div>
         </div>
     );

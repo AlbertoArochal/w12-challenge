@@ -1,16 +1,20 @@
 import { RobotGenerator } from '../Robot/Robot';
 import { deities } from './StaffModel';
 
-interface robotType {
+export interface robotType {
     name: string;
     velocity: number;
     endurance: number;
 }
 
-export const RobotList = (deities: robotType[]) => {
+export interface RobotListProps {
+    robots: robotType[];
+}
+
+export const RobotList = (props: RobotListProps) => {
     return (
-        <>
-            {deities.map((deity, index: number) => (
+        <div className="robolist">
+            {props.robots.map((deity, index: number) => (
                 <RobotGenerator
                     key={index}
                     name={deity.name}
@@ -18,6 +22,6 @@ export const RobotList = (deities: robotType[]) => {
                     endurance={deity.endurance}
                 />
             ))}
-        </>
+        </div>
     );
 };

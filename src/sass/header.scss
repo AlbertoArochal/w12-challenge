@@ -176,3 +176,85 @@ body {
     *white-space: nowrap;
     overflow: hidden;
 }
+.robolist {
+    display: flex;
+    margin-left: 10rem;
+}
+
+.Robot {
+    display: flexbox;
+    border: 3px black solid;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.RobotStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    font-size: larger;
+}
+
+.RobotStats h3 {
+    color: purple;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.RobotStats p {
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.Robot h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.HireButton {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+    box-shadow: 0.5rem 0.5rem 0px 0px black, 0.5rem 0.5rem 0px 0px black;
+}
+
+.HireButton:hover {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid black;
+}

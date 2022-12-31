@@ -30,6 +30,7 @@ body {
     padding: auto%;
     z-index: 1000;
     margin: auto;
+    background-color: (255, 220, 168);
 }
 
 .LogoContainer h1 {
@@ -175,4 +176,94 @@ body {
     height: 100%;
     *white-space: nowrap;
     overflow: hidden;
+}
+.robolist {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-auto-flow: column;
+    grid-auto-columns: 4%;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.Robot {
+    display: flexbox;
+    border: 3px black solid;
+    background-color: white;
+    height: 100%;
+    width: min-content;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0.2rem 0.2rem 0px 0px black, 0.2rem 0.2rem 0px 0px black;
+}
+
+.RobotStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    height: 50%;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    font-size: larger;
+}
+
+.RobotStats h3 {
+    color: purple;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin: 0;
+}
+
+.RobotPicture img {
+    height: 250px;
+}
+
+.RobotStats p {
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin: 0;
+}
+
+.Robot h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+
+.HireButton {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 0.15rem solid black;
+    box-shadow: 0.3rem 0.3rem 0px 0px black, 0.3rem 0.3rem 0px 0px black;
+}
+
+.HireButton:hover {
+    background-color: white;
+    color: purple;
+    border: 0.15rem solid black;
 }

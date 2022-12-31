@@ -12,7 +12,6 @@ export interface robotType {
 export interface RobotListProps {
     robots: robotType[];
 }
-
 export const RobotList = (props: RobotListProps) => {
     useEffect(() => {
         if (document.querySelector('.robolist')) {

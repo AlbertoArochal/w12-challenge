@@ -20,8 +20,11 @@ export const roboScroll = () => {
             e.preventDefault();
             currentX = e.clientX - initialX;
             xOffset = currentX;
-
             roboList!.style.transform = `translateX(${currentX}px)`;
+            roboList!.style.cursor = 'grabbing';
+        }
+        if (!isDragging) {
+            roboList!.style.cursor = 'grab';
         }
     });
 };

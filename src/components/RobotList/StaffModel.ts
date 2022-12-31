@@ -5,7 +5,7 @@ export const deities: robotType[] = [
     { name: 'Aletheia', velocity: 1, endurance: 3 },
     { name: 'Azathoth', velocity: 8, endurance: 10 },
     { name: 'Azhorra-Tha', velocity: 5, endurance: 6 },
-    { name: 'The Blackness from the Stars', velocity: 3, endurance: 4 },
+    { name: 'The Blackness', velocity: 3, endurance: 4 },
     { name: 'The Cloud-Thing', velocity: 2, endurance: 9 },
     { name: "C'thalpa", velocity: 7, endurance: 2 },
     { name: 'Cxaxukluth', velocity: 1, endurance: 10 },

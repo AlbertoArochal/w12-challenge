@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { Catalogue } from '../components/RobotList/cataloguePage';
-import { RoboStore } from '../Store';
+import { RoboCreator } from '../components/RobotForm/roboCreatorPage';
 
 export const AppRouter = () => {
     return (
@@ -8,6 +8,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<Navigate to="/Store" />} />
                 <Route path="/catalogue" element={<Catalogue />} />
+                <Route path="/robocreator" element={<RoboCreator />} />
             </Routes>
         </>
     );

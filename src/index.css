@@ -103,83 +103,6 @@ body {
     color: black;
 }
 
-.mac-window {
-    display: inline-block;
-    transform: rotate(3deg);
-    background: white;
-    color: white;
-    border: 4px solid black;
-    width: 400px;
-    height: 400px;
-    border-radius: 1px;
-    top: 2rem;
-    right: 7rem;
-    position: relative;
-    box-shadow: 7px 4px 0px 0px yellow, 10px 6px 0px 0px black;
-}
-
-.mac-window .title-bar {
-    text-align: center;
-    border-bottom: 1px solid black;
-    width: 100%;
-    position: relative;
-}
-
-.mac-window .title-bar .bars-container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin: 3px 1px 2px 1px;
-    position: relative;
-    background-color: black;
-}
-
-.mac-window .title-bar .bars-container .bar {
-    margin-bottom: 1px;
-    border-bottom: 1px solid black;
-    width: 100%;
-}
-
-.mac-window .title-bar .close {
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    top: -1px;
-    left: 7px;
-    background: white;
-    padding: 1px;
-    z-index: 2;
-}
-
-.mac-window .title-bar .close .inner {
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-}
-
-.mac-window .title-bar .title {
-    display: inline;
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    box-sizing: none;
-    padding: 0 6px;
-    background: white;
-    font-size: 0.8em;
-    height: 100%;
-    *white-space: nowrap;
-    overflow: hidden;
-}
 .robolist {
     display: grid;
     grid-template-rows: min-content;
@@ -269,5 +192,82 @@ body {
     background-color: white;
     color: purple;
     border: 0.15rem solid black;
+}
+
+.roboForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 17rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.formTitle {
+    color: purple;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+
+.roboForm button {
+    padding: 1rem;
+    margin: 2rem;
+    width: 320px;
+    font-size: 1.5rem;
+    background-color: purple;
+    border-radius: 2rem;
+    font-weight: 800;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.roboForm button:hover {
+    background-color: rgb(248, 116, 228);
+    color: rgb(91, 0, 91);
+    box-shadow: 5px 5px 0px 0px black;
+    cursor: pointer;
+}
+
+.roboForm button:active {
+    transform: scale(0.99);
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.formArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    box-shadow: 30px 35px 2px #e28743;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.formInput {
+    outline: none;
+    border: 2px solid black;
+    box-shadow: 3px 4px 0px 1px black;
+    width: 290px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.formInput:focus {
+    transform: scale(1.01);
+    box-shadow: 3px 4px 0px 1px black;
 }
 

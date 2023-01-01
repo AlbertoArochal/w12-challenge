@@ -195,9 +195,9 @@ body {
     border: 3px black solid;
     background-color: white;
     height: 100%;
-    width: min-content;
+    width: fit-content;
     border-radius: 0.5rem;
-    margin: 1rem;
+    margin: 0rem 4rem;
     box-shadow: 0.2rem 0.2rem 0px 0px black, 0.2rem 0.2rem 0px 0px black;
 }
 
@@ -208,15 +208,15 @@ body {
     align-items: left;
     height: 50%;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0;
-    font-size: larger;
+    font-size: large;
 }
 
 .RobotStats h3 {
     color: purple;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -225,12 +225,12 @@ body {
 }
 
 .RobotPicture img {
-    height: 250px;
+    height: 230px;
 }
 
 .RobotStats p {
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -253,12 +253,12 @@ body {
     display: inline-block;
     background-color: purple;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.8rem;
     cursor: pointer;
     border-radius: 0.5rem;
     border: 0.15rem solid black;

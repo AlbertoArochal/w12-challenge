@@ -7,6 +7,8 @@ export interface robotType {
     name: string;
     velocity: number;
     endurance: number;
+    created_at: string;
+    manufacturer: string;
 }
 
 export interface RobotListProps {
@@ -27,6 +29,8 @@ export const RobotList = (props: RobotListProps) => {
                     name={deity.name}
                     velocity={deity.velocity}
                     endurance={deity.endurance}
+                    created_at={deity.created_at}
+                    manufacturer={deity.manufacturer}
                 />
             ))}
         </div>

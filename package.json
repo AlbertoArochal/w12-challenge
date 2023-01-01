@@ -21,7 +21,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "next build",
         "build-css": "css-concat src/sass/*.scss src/index.css -o src/index.css",
         "test": "react-scripts test",
         "eject": "react-scripts eject",

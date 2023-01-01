@@ -1,5 +1,4 @@
 import { HeaderMenu } from './headerMenu';
-import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 export const Header = () => {
     const sections = ['HOME', 'CATALOGUE', 'ROBOCREATOR', 'CART'];
@@ -11,11 +10,11 @@ export const Header = () => {
                 <h1>Metal Tentacle</h1>
                 <HeaderMenu sections={sections} />
             </div>
-            {location.pathname === '/catalogue' ? null : (
+            {location.pathname === '/store' || location.pathname === '/home' ? (
                 <div className="Subtitle">
                     <h2>Feel the gentle touch of the tentacle.</h2>
                 </div>
-            )}
+            ) : null}
         </header>
     );
 };

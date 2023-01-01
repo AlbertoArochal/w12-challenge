@@ -21,7 +21,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "next build",
+        "build": "react-scripts build",
         "build-css": "css-concat src/sass/*.scss src/index.css -o src/index.css",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
@@ -30,8 +30,7 @@
         "lint": "eslint .",
         "start:dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
         "json-server": "node server.js",
-        "server": "json-server --watch db.json --port 3001",
-        "client": "next start"
+        "server": "json-server --watch db.json --port 3001"
     },
     "eslintConfig": {
         "extends": [

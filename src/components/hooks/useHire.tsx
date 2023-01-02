@@ -3,7 +3,7 @@ import { robotType } from '../RobotList/RobotList';
 export const useHire = () => {
     let baseUrl = 'http://localhost:3000';
     if (process.env.NODE_ENV !== 'development') {
-        baseUrl = '/api'; // use a different base URL in production
+        baseUrl = 'https://anaju-txikia.onrender.com'; // use a different base URL in production
     }
 
     const addCart = async (newRobot: any) => {

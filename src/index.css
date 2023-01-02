@@ -60,6 +60,49 @@ body {
     margin-right: 30px;
 }
 
+.headerlink {
+    text-decoration: none;
+    color: black;
+    left: 70%;
+    top: 70%;
+    position: absolute;
+}
+
+.headerButton {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 200%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    background-color: rgb(198, 3, 198);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 0px 0px black;
+    border: 3px solid black;
+    margin: auto;
+    justify-content: center;
+    transform: rotate(-2deg);
+    cursor: pointer;
+    font-family: Oswald, sans-serif;
+}
+
+.headerButton:hover {
+    background-color: rgb(255, 220, 168);
+    color: black;
+    border: 3px solid black;
+}
+
+.headerButton:active {
+    background-color: rgb(198, 3, 198);
+    color: black;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px 0px black;
+}
+
 .Subtitle {
     display: flex;
     align-items: center;

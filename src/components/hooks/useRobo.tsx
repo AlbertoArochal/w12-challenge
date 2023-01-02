@@ -4,8 +4,13 @@ import { robotType, RobotListProps } from '../RobotList/RobotList';
 export const useRobo = () => {
     const [robo, setRobo] = useState([]);
 
+    let baseUrl = 'http://localhost:3000';
+    if (process.env.NODE_ENV !== 'development') {
+        baseUrl = '/api'; // use a different base URL in production
+    }
+
     const addRobot = async (newRobot: robotType) => {
-        await fetch('http://localhost:3000/robots', {
+        await fetch(`${baseUrl}/robots`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -15,14 +20,14 @@ export const useRobo = () => {
     };
 
     const deleteRobot = async (robotId: string) => {
-        await fetch(`http://localhost:3000/robots/${robotId}`, {
+        await fetch(`${baseUrl}/robots/${robotId}`, {
             method: 'DELETE',
         });
     };
 
     useEffect(() => {
         async function fetchRobo() {
-            const response = await fetch('http://localhost:3000/robots');
+            const response = await fetch(`${baseUrl}/robots`);
             const data = await response.json();
             setRobo(data);
         }

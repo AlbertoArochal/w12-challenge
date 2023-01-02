@@ -25,20 +25,16 @@ export const Catalogue = () => {
                 return robots;
             };
 
-            let url = 'http://localhost:3000/robots';
+            let baseUrl = 'http://localhost:3000';
             if (process.env.NODE_ENV !== 'development') {
-                url = '/api/robots'; // use a different URL in production
+                baseUrl = '/api'; // use a different base URL in production
             }
-            const response = await fetch(url);
+            const response = await fetch(`${baseUrl}/robots`);
             const data = await response.json();
             if (data.length === 0) {
                 const robotsFromFile = readRobotsFromFile(deities);
                 for (const robot of robotsFromFile) {
-                    url = 'http://localhost:3000/robots';
-                    if (process.env.NODE_ENV !== 'development') {
-                        url = '/api/robots'; // use a different URL in production
-                    }
-                    addRobot(robot);
+                    await addRobot(robot);
                 }
             }
         }

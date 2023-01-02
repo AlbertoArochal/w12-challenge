@@ -7,7 +7,7 @@ export const AppRouter = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Navigate to="/Store" />} />
+                <Route path="/" element={<Navigate to="/store" />} />
                 <Route path="/catalogue" element={<Catalogue />} />
                 <Route path="/robocreator" element={<RoboCreator />} />
                 <Route path="/robot-info" element={<RobotInfo />} />

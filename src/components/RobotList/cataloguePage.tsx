@@ -25,15 +25,24 @@ export const Catalogue = () => {
                 return robots;
             };
 
-            const response = await fetch('http://localhost:3000/robots');
+            let url = 'http://localhost:3000/robots';
+            if (process.env.NODE_ENV !== 'development') {
+                url = '/api/robots'; // use a different URL in production
+            }
+            const response = await fetch(url);
             const data = await response.json();
             if (data.length === 0) {
                 const robotsFromFile = readRobotsFromFile(deities);
                 for (const robot of robotsFromFile) {
+                    url = 'http://localhost:3000/robots';
+                    if (process.env.NODE_ENV !== 'development') {
+                        url = '/api/robots'; // use a different URL in production
+                    }
                     addRobot(robot);
                 }
             }
         }
+
         loadRobots();
     }, [addRobot, robo]);
 

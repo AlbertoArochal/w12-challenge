@@ -80,5 +80,17 @@
         "css-concat": "^0.0.4",
         "eslint-config-prettier": "^8.5.0",
         "node-sass": "^7.0.3"
-    }
+    },
+    {
+        "name": "json-server-vercel",
+        "version": "1.0.0",
+        "description": "Deploy JSON Server to Vercel",
+        "main": "server.js",
+        "scripts": {
+          "start": "node server.js"
+        },
+        "dependencies": {
+          "json-server": "^0.17.0"
+        }
+      }
 }

@@ -12,7 +12,6 @@ export const RobotInfo = () => {
                     <h2>{newRobot.name}</h2>
                 </div>
                 <div className="RobotPicture">
-                    <div className="blob"></div>
                     <img src={picture} alt={newRobot.name} />
                 </div>
                 <div className="RobotStats">

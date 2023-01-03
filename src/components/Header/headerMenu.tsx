@@ -8,7 +8,11 @@ export const HeaderMenu = (props: HeaderMenuProps) => {
     return (
         <nav className="Headernav">
             {props.sections.map((section: string, index: number) => (
-                <Link key={index} to={`/${section.toLowerCase()}`}>
+                <Link
+                    className="section"
+                    key={index}
+                    to={`/${section.toLowerCase()}`}
+                >
                     {section}
                 </Link>
             ))}

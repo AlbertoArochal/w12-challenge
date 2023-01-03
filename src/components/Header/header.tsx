@@ -6,9 +6,9 @@ export const Header = () => {
     const location = useLocation();
 
     return (
-        <header>
+        <header className="HeaderContainer">
             <div className="LogoContainer">
-                <h1>Metal Tentacle</h1>
+                <h1></h1>
                 <HeaderMenu sections={sections} />
             </div>
             {location.pathname === '/store' || location.pathname === '/home' ? (

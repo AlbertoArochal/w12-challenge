@@ -1,10 +1,10 @@
 import { Header } from '../Header/header';
-import { CartList } from './CartList';
+import { FetchCartList } from './FetchCartList';
 export const Cart = () => {
     return (
         <>
             <Header />
-            <CartList />
+            <FetchCartList />
         </>
     );
 };

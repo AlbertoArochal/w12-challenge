@@ -1,5 +1,4 @@
 import { RobotGenerator } from '../Robot/Robot';
-import { deities } from './StaffModel';
 import { useEffect } from 'react';
 import { roboScroll } from '../../helpers/roboScroll';
 

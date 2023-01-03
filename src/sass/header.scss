@@ -33,15 +33,6 @@ body {
     background-color: (255, 220, 168);
 }
 
-.LogoContainer h1 {
-    text-decoration: underline;
-    background-color: black;
-    color: white;
-    display: block;
-    padding: 20px;
-    height: fit-content;
-}
-
 .Headernav {
     display: flex;
     justify-content: space-between;
@@ -115,6 +106,65 @@ body {
     position: relative;
     top: 17rem;
     left: 7%;
+}
+
+.LogoContainer {
+    border-bottom: #e28743 3px solid;
+    width: 100%;
+    height: 15%;
+    padding: 0rem 5rem;
+    background-color: rgb(255, 189, 188, 0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.LogoContainer h1 {
+    text-decoration: none;
+    color: black;
+    border-radius: 0.3rem;
+    font-size: 5rem;
+}
+.LogoContainer h1::before {
+    content: 'Metal';
+    color: black;
+}
+
+.LogoContainer h1::after {
+    content: 'Tentacle';
+    color: red;
+}
+
+.section:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.HiredContainer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-size: 5rem;
+    margin-top: 8rem;
+    position: relative;
+    background-color: #ffbdbc;
+    top: 4rem;
+    left: 7%;
+    overflow: hidden;
+    box-shadow: 35px 35px 2px 2px #e28743;
+    border-radius: 1.5rem;
+    flex-wrap: wrap; /* agrega una nueva fila cuando se desborde */
+}
+
+.HiredContainer > div {
+    /* ajusta el tamaño de los elementos para que se ajusten correctamente */
+    width: calc(25% - 2rem);
+    margin: 1rem;
 }
 
 .Subtitle h2 {
@@ -232,8 +282,8 @@ body {
 
 .HireButton {
     display: inline-block;
-    background-color: purple;
-    color: white;
+    background-color: #effc3c;
+    color: black;
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -276,6 +326,88 @@ body {
     font-weight: 900;
     font-size: 1.5rem;
     margin-top: auto;
+}
+
+.RobotHired {
+    border-radius: 10px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #06ffc4;
+    font-size: 14px;
+    margin: 1.5rem;
+}
+
+.RobotHired .RobotPicture {
+    border: 3px solid black;
+    height: 15rem;
+    margin: 1rem;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 89% 86%) 0%,
+        hsl(243deg 57% 85%) 11%,
+        hsl(249deg 29% 83%) 22%,
+        hsl(319deg 6% 82%) 33%,
+        hsl(43deg 26% 81%) 44%,
+        hsl(49deg 47% 79%) 56%,
+        hsl(52deg 65% 77%) 67%,
+        hsl(53deg 79% 75%) 78%,
+        hsl(54deg 91% 71%) 89%,
+        hsl(55deg 100% 66%) 100%
+    );
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0px 0px black, 0.3rem 0.3rem 0px 0px black;
+}
+
+.RobotHired .HiredButton {
+    margin: 0.5rem;
+    display: block;
+    cursor: pointer;
+    background-color: #effc3c;
+    width: 12rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.7rem 0rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid black;
+    box-shadow: 0.2rem 0.2rem 0px 0px black;
+}
+
+.RobotHired .HiredButton:hover {
+    background-color: white;
+    color: purple;
+    border: 0.15rem solid black;
+}
+
+.RobotHired h2 {
+    font-size: 18px;
+}
+
+.RobotHired img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.HiredStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5px 0;
+}
+
+.HiredStats h3 {
+    font-size: 16px;
+}
+
+.HiredStats p {
+    font-size: 14px;
 }
 
 .roboForm button {

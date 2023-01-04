@@ -25,14 +25,6 @@
       "id": 797
     },
     {
-      "name": "Azathoth",
-      "velocity": 8,
-      "endurance": 10,
-      "created_at": "1922-06-02",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 835
-    },
-    {
       "name": "Azhorra-Tha",
       "velocity": 5,
       "endurance": 6,
@@ -193,6 +185,22 @@
       "endurance": 2,
       "created_at": "2023-01-03",
       "manufacturer": "Juan Manuel Cabrera"
+    },
+    {
+      "name": "Marito",
+      "id": 620,
+      "velocity": 8,
+      "endurance": 9,
+      "created_at": "2023-01-03",
+      "manufacturer": "Alberto"
+    },
+    {
+      "name": "Raul Losa",
+      "id": 835,
+      "velocity": 3,
+      "endurance": 5,
+      "created_at": "2023-01-03",
+      "manufacturer": "Alberto"
     }
   ]
 }

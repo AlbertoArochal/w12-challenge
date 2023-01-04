@@ -27,7 +27,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-align: auto;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     padding: auto%;
@@ -45,7 +44,6 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: auto;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     margin-right: 30px;
@@ -67,7 +65,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     background-color: rgb(198, 3, 198);
@@ -101,22 +98,21 @@ body {
     width: 85%;
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     font-size: 5rem;
     margin-top: 8rem;
     position: relative;
-    top: 17rem;
+    top: 10rem;
     left: 7%;
 }
 
 .LogoContainer {
-    border-bottom: #e28743 3px solid;
+    border-bottom: black 2px solid;
     width: 100%;
-    height: 15%;
+    height: 13%;
     padding: 0rem 5rem;
-    background-color: rgb(255, 189, 188, 0.7);
+    background-color: rgb(255, 255, 255, 0.8);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
@@ -130,6 +126,129 @@ body {
 .LogoContainer h1::before {
     content: 'Metal';
     color: black;
+}
+
+.NewsSection {
+    display: flex;
+    position: relative;
+    top: 25rem;
+    justify-content: space-between;
+}
+
+.Reviews {
+    font-size: small;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+}
+
+.Review1 {
+    background-color: #f8dffa;
+    top: -13%;
+    left: 15px;
+}
+
+.Review2 {
+    background-color: #b4ffb0;
+    top: 2%;
+    left: 10px;
+}
+
+.Review3 {
+    background-color: #b4d4ff;
+    top: -5%;
+    left: -70px;
+}
+
+.ReviewsContainer {
+    position: absolute;
+    height: 100%;
+    width: 150%;
+}
+
+.BestEmployee {
+    background-color: #f8dffa;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 37rem;
+    border: 2px solid black;
+    font-family: Poppins, sans-serif;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+}
+
+.BestEmployee .Name {
+    background-color: white;
+    width: 85%;
+    margin: 2rem auto;
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+    border: 2px black solid;
+}
+
+.EmployeeContainer {
+    border-right: 3px solid black;
+    padding: 4rem 10rem;
+    align-items: center;
+    align-items: center;
+}
+
+.BestEmployee h2 {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    margin: 2rem auto 7rem auto;
+    border: 2px black solid;
+    background-color: white;
+    width: 80%;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0rem 0.5rem;
+    text-align: center;
+}
+.BestEmployee h2::after {
+    content: ' ☆☆☆☆☆';
+    color: #4e0054;
+}
+
+.EmployeeTrolley {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    margin: 5rem auto 0rem auto;
+    padding: 0 auto;
+    background-color: #b4ffb0;
+    border-radius: 90%;
+    border: 2px black solid;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    top: 8rem;
+}
+
+.EmployeeTrolley:hover {
+    background-color: #b4ffb0;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    transform: scale(1.1);
+}
+
+.EmployeeTrolley:active {
+    background-color: #b4ffb0;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    transform: scale(0.9);
+}
+
+.BestEmployee img {
+    border: 2px black solid;
+    width: 25%;
+    border-radius: 90%;
+    background-color: #faf4a0;
 }
 
 .LogoContainer h1::after {
@@ -149,7 +268,6 @@ body {
     width: 85%;
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     font-size: 5rem;
@@ -252,7 +370,6 @@ body {
     text-align: left;
     font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     margin: 0;
@@ -266,7 +383,6 @@ body {
     text-align: left;
     font-size: 2rem;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     margin: 0;
@@ -276,7 +392,6 @@ body {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     margin-top: 1rem;
@@ -289,7 +404,6 @@ body {
     color: black;
     font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;
     padding: 0.8rem;

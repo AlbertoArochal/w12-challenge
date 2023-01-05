@@ -20,7 +20,7 @@ export const useRobo = () => {
     };
 
     const deleteRobot = async (robotId: string) => {
-        await fetch(`${baseUrl}/robots/${robotId}`, {
+        await fetch(`${baseUrl}/hired/${robotId}`, {
             method: 'DELETE',
         });
     };

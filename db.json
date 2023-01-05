@@ -17,12 +17,12 @@
       "id": 1123
     },
     {
-      "name": "Aletheia",
-      "velocity": 1,
-      "endurance": 3,
-      "created_at": "1922-07-27",
+      "name": "Azathoth",
+      "velocity": 8,
+      "endurance": 10,
+      "created_at": "1922-06-02",
       "manufacturer": "Robotentacle Inc.",
-      "id": 797
+      "id": 835
     },
     {
       "name": "Azhorra-Tha",
@@ -147,60 +147,36 @@
       "manufacturer": "Alberto"
     },
     {
-      "name": "Anaju Txikia2",
-      "id": 1195,
-      "velocity": 6,
-      "endurance": 1,
-      "created_at": "2023-01-03",
-      "manufacturer": "asdasdasd"
-    },
-    {
-      "name": "Pupu Caramelo",
-      "id": 1262,
+      "name": "Aletheia",
       "velocity": 1,
-      "endurance": 9,
-      "created_at": "2023-01-03",
+      "endurance": 3,
+      "created_at": "1922-07-27",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 797
+    },
+    {
+      "name": "Mondonguito",
+      "id": 1171,
+      "velocity": 8,
+      "endurance": 3,
+      "created_at": "2023-01-05",
       "manufacturer": "Alberto"
     },
     {
-      "name": "RoboFerdi",
-      "id": 892,
-      "velocity": 3,
-      "endurance": 7,
-      "created_at": "2023-01-03",
-      "manufacturer": "Alberto"
-    },
-    {
-      "name": "Adri Losa",
-      "id": 815,
+      "name": "Antonio Maldonado",
+      "id": 1671,
       "velocity": 6,
-      "endurance": 8,
-      "created_at": "2023-01-03",
-      "manufacturer": "Alberto"
-    },
-    {
-      "name": "Devilniced",
-      "id": 1015,
-      "velocity": 9,
       "endurance": 2,
-      "created_at": "2023-01-03",
+      "created_at": "2023-01-05",
       "manufacturer": "Juan Manuel Cabrera"
     },
     {
-      "name": "Marito",
-      "id": 620,
-      "velocity": 8,
-      "endurance": 9,
-      "created_at": "2023-01-03",
-      "manufacturer": "Alberto"
-    },
-    {
-      "name": "Raul Losa",
-      "id": 835,
-      "velocity": 3,
-      "endurance": 5,
-      "created_at": "2023-01-03",
-      "manufacturer": "Alberto"
+      "name": "Pepepotamo",
+      "id": 1050,
+      "velocity": 1,
+      "endurance": 3,
+      "created_at": "2023-01-05",
+      "manufacturer": "Monsier"
     }
   ]
 }

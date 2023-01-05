@@ -45,7 +45,7 @@ export const BestEmployee = () => {
                 <div className="BestEmployee">
                     <p className="Name">Name: {bestEmployee.name}</p>
                     <img
-                        src="https://robohash.org/{bestEmployee.name}?set=set3"
+                        src={`https://robohash.org/${bestEmployee.name}?set=set3`}
                         alt="  "
                     />
                     <h2>Best Employee</h2>
@@ -64,7 +64,7 @@ export const BestEmployee = () => {
                         </p>
                     </div>
 
-                    <button className="EmployeeTrolley">&#129302;</button>
+                    <button className="EmployeeTrolley"> &#129302; </button>
                     <p>Manufacturer: {bestEmployee.manufacturer}</p>
                 </div>
             </div>

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { RobotGenerator } from '../Robot/Robot';
-
+import { Fire } from '../buttons/Fire';
+import { click } from '@testing-library/user-event/dist/click';
 export const FetchCartList = () => {
     const [cartContent, setCartContent] = useState([]);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const [isFiring, setIsFiring] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -23,6 +25,23 @@ export const FetchCartList = () => {
             setIsLoading(false);
         };
         fetchData();
+    }, [isFiring]);
+
+    useEffect(() => {
+        const handleFireButtonClick = (event: any) => {
+            if (event!.target!.matches('.HiredButton')) {
+                setIsFiring(true);
+                new Promise((resolve) => {
+                    setTimeout(resolve, 300);
+                }).then(() => {
+                    setIsFiring(false);
+                });
+            }
+        };
+        window.addEventListener('click', handleFireButtonClick);
+        return () => {
+            window.removeEventListener('click', handleFireButtonClick);
+        };
     }, []);
 
     if (error) {

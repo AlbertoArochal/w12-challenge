@@ -1,11 +1,21 @@
 import { useLocation } from 'react-router-dom';
+import { HireButton } from '../buttons/Hire';
+import { useState } from 'react';
+import { Fire } from '../buttons/Fire';
 
-export const RobotGenerator = (props: any) => {
+export interface RobotGeneratorProps {
+    name: string;
+    velocity: number;
+    endurance: number;
+    created_at: string;
+    manufacturer: string;
+}
+
+export const RobotGenerator = (props: RobotGeneratorProps) => {
     const { name, velocity, endurance, created_at, manufacturer } = props;
 
     const location = useLocation();
     const picture = `https://robohash.org/${name}?set=set3`;
-
     return location.pathname === '/catalogue' ? (
         <div className="Robot">
             <div className="RobotName">
@@ -31,7 +41,7 @@ export const RobotGenerator = (props: any) => {
                     <h3>Manufacturer</h3>
                     <p>{manufacturer}</p>
                 </div>
-                <button className="HireButton">Hire</button>
+                {<HireButton name={name} />}
             </div>
         </div>
     ) : (
@@ -43,7 +53,7 @@ export const RobotGenerator = (props: any) => {
                 <h2>{name}</h2>
             </div>
             <div className="HiredButtons">
-                <button className="HiredButton">Fire</button>
+                {<Fire name={name} />}
                 <button className="HiredButton">Upgrade</button>
                 <button className="HiredButton">Details</button>
             </div>

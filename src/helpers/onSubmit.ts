@@ -1,6 +1,5 @@
 import { getRobotId } from './getRoobotID';
-import { robotType } from '../components/RobotList/RobotList';
-import { useHire } from '../components/hooks/useHire';
+
 export const onSubmit = (data: any) => {
     console.log(data);
     const createValues = (name: string) => {

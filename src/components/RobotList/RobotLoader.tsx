@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useRobo } from '../hooks/useRobo';
 import { deities } from './StaffModel';
 import { robotType } from './RobotList';

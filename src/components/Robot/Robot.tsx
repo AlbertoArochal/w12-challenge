@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import { HireButton } from '../buttons/Hire';
-import { useState } from 'react';
 import { Fire } from '../buttons/Fire';
 import { DetailsButton } from '../buttons/Details';
 

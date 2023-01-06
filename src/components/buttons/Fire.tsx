@@ -3,7 +3,7 @@ import { useRobo } from '../hooks/useRobo';
 export const Fire = (props: any) => {
     let baseUrl = 'http://localhost:3000';
     if (process.env.NODE_ENV !== 'development') {
-        baseUrl = 'https://anaju-txikia.onrender.com'; // use a different base URL in production
+        baseUrl = 'https://anaju-txikia.onrender.com';
     }
 
     const { addRobot, deleteRobot } = useRobo();

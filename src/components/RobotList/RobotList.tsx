@@ -1,8 +1,6 @@
 import { RobotGenerator } from '../Robot/Robot';
 import { useEffect } from 'react';
 import { roboScroll } from '../../helpers/roboScroll';
-import { useState } from 'react';
-import { useHire } from '../hooks/useHire';
 
 export interface robotType {
     name: string;

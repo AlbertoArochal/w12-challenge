@@ -1,5 +1,6 @@
 import { RobotGenerator } from '../Robot/Robot';
 import { robotArray } from './FictionDetails';
+
 export const DetailsLoader = (props: any) => {
     const detailedRobot = localStorage.getItem('RobotDetails')
         ? JSON.parse(localStorage.getItem('RobotDetails') || '')

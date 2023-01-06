@@ -1,12 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 export const RobotInfo = () => {
     const newRobot = JSON.parse(localStorage.getItem('robot')!);
     const picture = `https://robohash.org/${newRobot.name}?set=set3`;
-
+    const navigate = useNavigate();
     return (
         <div className="newHired">
-            <h2 className="newHiredTitle">Your new servant</h2>
-            <h3 className="newHiredTitle">was added to cart</h3>
-
             <div className="RobotHired">
                 <div className="RobotName">
                     <h2>{newRobot.name}</h2>
@@ -33,6 +31,12 @@ export const RobotInfo = () => {
                     </div>
                 </div>
             </div>
+            <button
+                onClick={() => navigate('/robocreator')}
+                className="KeepCreating"
+            >
+                KEEP CREATING
+            </button>
         </div>
     );
 };

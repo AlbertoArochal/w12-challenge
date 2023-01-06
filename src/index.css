@@ -183,6 +183,31 @@ body {
     left: -70px;
 }
 
+.KeepCreating {
+    background-color: #effc3c;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    position: relative;
+    height: 3rem;
+    width: 16rem;
+    cursor: pointer;
+}
+
+.KeepCreating:hover {
+    background-color: #f8dffa;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+}
+
+.KeepCreating:active {
+    background-color: #effc3c;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    transform: scale(0.99);
+}
+
 .ReviewsContainer {
     position: absolute;
     height: 100%;
@@ -405,6 +430,15 @@ body {
     border-radius: 0.5rem;
     margin: 0rem 4rem;
     box-shadow: 0.2rem 0.2rem 0px 0px black, 0.2rem 0.2rem 0px 0px black;
+}
+
+.newHired {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
 }
 
 .RobotHired {

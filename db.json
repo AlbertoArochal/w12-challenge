@@ -25,22 +25,6 @@
       "id": 797
     },
     {
-      "name": "The Great Denier",
-      "velocity": 5,
-      "endurance": 7,
-      "created_at": "1924-02-05",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1451
-    },
-    {
-      "name": "Darkness",
-      "velocity": 10,
-      "endurance": 3,
-      "created_at": "1919-08-23",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 827
-    },
-    {
       "name": "Eihort",
       "velocity": 7,
       "endurance": 1,
@@ -143,7 +127,48 @@
       "created_at": "1940-06-29",
       "manufacturer": "Robotentacle Inc.",
       "id": 2048
+    },
+    {
+      "name": "Darkness",
+      "velocity": 10,
+      "endurance": 3,
+      "created_at": "1919-08-23",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 827
     }
   ],
-  "hired": []
+  "hired": [
+    {
+      "name": "Petunia Pork",
+      "id": 1170,
+      "velocity": 1,
+      "endurance": 9,
+      "created_at": "2023-01-06",
+      "manufacturer": "Alberto"
+    },
+    {
+      "name": "The Great Denier",
+      "velocity": 5,
+      "endurance": 7,
+      "created_at": "1924-02-05",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1451
+    },
+    {
+      "name": "Antonio Maldonado",
+      "id": 1671,
+      "velocity": 6,
+      "endurance": 2,
+      "created_at": "2023-01-06",
+      "manufacturer": "Alberto"
+    },
+    {
+      "name": "Adrian Losa",
+      "id": 1022,
+      "velocity": 6,
+      "endurance": 8,
+      "created_at": "2023-01-06",
+      "manufacturer": "Alberto"
+    }
+  ]
 }

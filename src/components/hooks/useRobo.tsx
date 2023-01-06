@@ -6,7 +6,7 @@ export const useRobo = () => {
 
     let baseUrl = 'http://localhost:3000';
     if (process.env.NODE_ENV !== 'development') {
-        baseUrl = 'https://anaju-txikia.onrender.com'; // use a different base URL in production
+        baseUrl = 'https://anaju-txikia.onrender.com';
     }
 
     const addRobot = async (newRobot: robotType) => {

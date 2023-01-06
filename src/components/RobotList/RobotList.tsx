@@ -29,18 +29,20 @@ export const RobotList = (props: any) => {
     }, []);
 
     return (
-        <div className="robolist">
-            {props.robots.map((deity: any, index: number) => (
-                <div key={index}>
-                    <RobotGenerator
-                        name={deity.name}
-                        velocity={deity.velocity}
-                        endurance={deity.endurance}
-                        created_at={deity.created_at}
-                        manufacturer={deity.manufacturer}
-                    />
-                </div>
-            ))}
+        <div className="detailedrobotcontainer">
+            <div className="robolist">
+                {props.robots.map((deity: any, index: number) => (
+                    <div key={index}>
+                        <RobotGenerator
+                            name={deity.name}
+                            velocity={deity.velocity}
+                            endurance={deity.endurance}
+                            created_at={deity.created_at}
+                            manufacturer={deity.manufacturer}
+                        />
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

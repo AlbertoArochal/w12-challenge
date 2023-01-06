@@ -33,60 +33,12 @@
       "id": 1057
     },
     {
-      "name": "The Blackness",
-      "velocity": 3,
-      "endurance": 4,
-      "created_at": "1953-09-23",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1239
-    },
-    {
-      "name": "The Cloud-Thing",
-      "velocity": 2,
-      "endurance": 9,
-      "created_at": "1962-07-27",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1375
-    },
-    {
-      "name": "C'thalpa",
-      "velocity": 7,
-      "endurance": 2,
-      "created_at": "1938-07-20",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 740
-    },
-    {
-      "name": "Cxaxukluth",
-      "velocity": 1,
-      "endurance": 10,
-      "created_at": "1944-09-15",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1073
-    },
-    {
       "name": "Daoloth",
       "velocity": 6,
       "endurance": 4,
       "created_at": "1934-08-23",
       "manufacturer": "Robotentacle Inc.",
       "id": 715
-    },
-    {
-      "name": "Darkness",
-      "velocity": 10,
-      "endurance": 3,
-      "created_at": "1919-08-23",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 827
-    },
-    {
-      "name": "D'endrrah",
-      "velocity": 3,
-      "endurance": 8,
-      "created_at": "1932-08-14",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 847
     },
     {
       "name": "Eihort",
@@ -135,17 +87,41 @@
       "created_at": "1940-06-29",
       "manufacturer": "Robotentacle Inc.",
       "id": 2048
+    },
+    {
+      "name": "The Blackness",
+      "velocity": 3,
+      "endurance": 4,
+      "created_at": "1953-09-23",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1239
+    },
+    {
+      "name": "C'thalpa",
+      "velocity": 7,
+      "endurance": 2,
+      "created_at": "1938-07-20",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 740
+    },
+    {
+      "name": "Cxaxukluth",
+      "velocity": 1,
+      "endurance": 10,
+      "created_at": "1944-09-15",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1073
+    },
+    {
+      "name": "D'endrrah",
+      "velocity": 3,
+      "endurance": 8,
+      "created_at": "1932-08-14",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 847
     }
   ],
   "hired": [
-    {
-      "name": "Anaju Txikia",
-      "id": 1145,
-      "velocity": 6,
-      "endurance": 8,
-      "created_at": "2023-01-03",
-      "manufacturer": "Alberto"
-    },
     {
       "name": "Aletheia",
       "velocity": 1,
@@ -155,28 +131,20 @@
       "id": 797
     },
     {
-      "name": "Mondonguito",
-      "id": 1171,
-      "velocity": 8,
-      "endurance": 3,
-      "created_at": "2023-01-05",
-      "manufacturer": "Alberto"
+      "name": "The Cloud-Thing",
+      "velocity": 2,
+      "endurance": 9,
+      "created_at": "1962-07-27",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1375
     },
     {
-      "name": "Antonio Maldonado",
-      "id": 1671,
-      "velocity": 6,
-      "endurance": 2,
-      "created_at": "2023-01-05",
-      "manufacturer": "Juan Manuel Cabrera"
-    },
-    {
-      "name": "Pepepotamo",
-      "id": 1050,
-      "velocity": 1,
+      "name": "Darkness",
+      "velocity": 10,
       "endurance": 3,
-      "created_at": "2023-01-05",
-      "manufacturer": "Monsier"
+      "created_at": "1919-08-23",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 827
     }
   ]
 }

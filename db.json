@@ -9,44 +9,20 @@
       "id": 598
     },
     {
-      "name": "Aiueb Gnshal",
-      "velocity": 4,
-      "endurance": 5,
-      "created_at": "1929-11-16",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1123
-    },
-    {
-      "name": "Azathoth",
-      "velocity": 8,
-      "endurance": 10,
-      "created_at": "1922-06-02",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 835
-    },
-    {
-      "name": "Azhorra-Tha",
-      "velocity": 5,
-      "endurance": 6,
-      "created_at": "1928-03-11",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1057
-    },
-    {
-      "name": "Daoloth",
-      "velocity": 6,
-      "endurance": 4,
-      "created_at": "1934-08-23",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 715
-    },
-    {
-      "name": "Eihort",
+      "name": "C'thalpa",
       "velocity": 7,
-      "endurance": 1,
-      "created_at": "1943-09-19",
+      "endurance": 2,
+      "created_at": "1938-07-20",
       "manufacturer": "Robotentacle Inc.",
-      "id": 619
+      "id": 740
+    },
+    {
+      "name": "Aletheia",
+      "velocity": 1,
+      "endurance": 3,
+      "created_at": "1922-07-27",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 797
     },
     {
       "name": "The Great Denier",
@@ -57,36 +33,36 @@
       "id": 1451
     },
     {
-      "name": "The Light of Leng",
-      "velocity": 9,
-      "endurance": 5,
-      "created_at": "1946-09-14",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1492
-    },
-    {
-      "name": "The Mass of Nothingness",
-      "velocity": 4,
-      "endurance": 2,
-      "created_at": "1924-12-01",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 2170
-    },
-    {
-      "name": "The Nameless Mass",
-      "velocity": 8,
-      "endurance": 6,
-      "created_at": "1947-08-31",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 1581
-    },
-    {
-      "name": "The Mother of Darkness",
-      "velocity": 2,
+      "name": "Darkness",
+      "velocity": 10,
       "endurance": 3,
-      "created_at": "1940-06-29",
+      "created_at": "1919-08-23",
       "manufacturer": "Robotentacle Inc.",
-      "id": 2048
+      "id": 827
+    },
+    {
+      "name": "Eihort",
+      "velocity": 7,
+      "endurance": 1,
+      "created_at": "1943-09-19",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 619
+    },
+    {
+      "name": "Azhorra-Tha",
+      "velocity": 5,
+      "endurance": 6,
+      "created_at": "1928-03-11",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1057
+    },
+    {
+      "name": "Aiueb Gnshal",
+      "velocity": 4,
+      "endurance": 5,
+      "created_at": "1929-11-16",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 1123
     },
     {
       "name": "The Blackness",
@@ -97,12 +73,20 @@
       "id": 1239
     },
     {
-      "name": "C'thalpa",
-      "velocity": 7,
-      "endurance": 2,
-      "created_at": "1938-07-20",
+      "name": "Azathoth",
+      "velocity": 8,
+      "endurance": 10,
+      "created_at": "1922-06-02",
       "manufacturer": "Robotentacle Inc.",
-      "id": 740
+      "id": 835
+    },
+    {
+      "name": "D'endrrah",
+      "velocity": 3,
+      "endurance": 8,
+      "created_at": "1932-08-14",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 847
     },
     {
       "name": "Cxaxukluth",
@@ -113,22 +97,12 @@
       "id": 1073
     },
     {
-      "name": "D'endrrah",
-      "velocity": 3,
-      "endurance": 8,
-      "created_at": "1932-08-14",
+      "name": "The Light of Leng",
+      "velocity": 9,
+      "endurance": 5,
+      "created_at": "1946-09-14",
       "manufacturer": "Robotentacle Inc.",
-      "id": 847
-    }
-  ],
-  "hired": [
-    {
-      "name": "Aletheia",
-      "velocity": 1,
-      "endurance": 3,
-      "created_at": "1922-07-27",
-      "manufacturer": "Robotentacle Inc.",
-      "id": 797
+      "id": 1492
     },
     {
       "name": "The Cloud-Thing",
@@ -139,12 +113,37 @@
       "id": 1375
     },
     {
-      "name": "Darkness",
-      "velocity": 10,
-      "endurance": 3,
-      "created_at": "1919-08-23",
+      "name": "The Nameless Mass",
+      "velocity": 8,
+      "endurance": 6,
+      "created_at": "1947-08-31",
       "manufacturer": "Robotentacle Inc.",
-      "id": 827
+      "id": 1581
+    },
+    {
+      "name": "Daoloth",
+      "velocity": 6,
+      "endurance": 4,
+      "created_at": "1934-08-23",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 715
+    },
+    {
+      "name": "The Mass of Nothingness",
+      "velocity": 4,
+      "endurance": 2,
+      "created_at": "1924-12-01",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 2170
+    },
+    {
+      "name": "The Mother of Darkness",
+      "velocity": 2,
+      "endurance": 3,
+      "created_at": "1940-06-29",
+      "manufacturer": "Robotentacle Inc.",
+      "id": 2048
     }
-  ]
+  ],
+  "hired": []
 }

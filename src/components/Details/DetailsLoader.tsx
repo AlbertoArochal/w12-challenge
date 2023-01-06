@@ -28,7 +28,7 @@ export const DetailsLoader = (props: any) => {
                 created_at={detailedRobot.created_at}
                 manufacturer={detailedRobot.manufacturer}
             />
-            {elements}
+            <div className="DetailsInfo">{elements}</div>
         </div>
     );
 };

@@ -1,6 +1,5 @@
-import { NewsType, News } from './News';
+import { NewsType } from './News';
 import { phrases } from './newsModel';
-import { useState, useEffect } from 'react';
 export const FetchNews = () => {
     const news: NewsType[] = phrases;
     const randomNews = () => Math.floor(Math.random() * 20);

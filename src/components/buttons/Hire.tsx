@@ -1,6 +1,4 @@
 import { useHire } from '../hooks/useHire';
-import { useState } from 'react';
-import { NavLinkProps } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 export const HireButton = (props: any) => {
     const navigate = useNavigate();

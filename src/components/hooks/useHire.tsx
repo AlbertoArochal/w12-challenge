@@ -1,5 +1,3 @@
-import { robotType } from '../RobotList/RobotList';
-
 export const useHire = () => {
     let baseUrl = 'http://localhost:3000';
     if (process.env.NODE_ENV !== 'development') {

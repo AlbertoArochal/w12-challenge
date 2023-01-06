@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { RobotGenerator } from '../Robot/Robot';
-import { Fire } from '../buttons/Fire';
-import { click } from '@testing-library/user-event/dist/click';
 export const FetchCartList = () => {
     const [cartContent, setCartContent] = useState([]);
     const [error, setError] = useState(null);

@@ -25,6 +25,16 @@ export const useRobo = () => {
         });
     };
 
+    const updateRobot = async (robotId: string, newRobot: robotType) => {
+        await fetch(`${baseUrl}/hired/${robotId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newRobot),
+        });
+    };
+
     useEffect(() => {
         async function fetchRobo() {
             const response = await fetch(`${baseUrl}/robots`);
@@ -34,5 +44,5 @@ export const useRobo = () => {
         fetchRobo();
     }, []);
 
-    return { robo, addRobot, deleteRobot };
+    return { robo, addRobot, deleteRobot, updateRobot };
 };

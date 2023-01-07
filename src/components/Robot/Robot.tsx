@@ -53,6 +53,17 @@ export const RobotGenerator = (props: RobotGeneratorProps) => {
             <div className="RobotName">
                 <h2>{name}</h2>
             </div>
+            <div className="RobotStats">
+                <div className="RobotStat">
+                    <h3>Velocity</h3>
+                    <p>{velocity}</p>
+                </div>
+                <div className="RobotStat">
+                    <h3>Endurance</h3>
+                    <p>{endurance}</p>
+                </div>
+            </div>
+
             <div className="HiredButtons">
                 {<Fire name={name} />}
                 <UpgradeButton

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { components } from './upgradeList';
 import { RobotInfo } from '../RobotForm/RobotInfo';
+import { useRobo } from '../hooks/useRobo';
+import { useNavigate } from 'react-router-dom';
 
 export type ComponentType = {
     name: string;
@@ -16,6 +18,13 @@ export const UpgradeForm: React.FC<{
     const [selectedComponents, setSelectedComponents] = useState<
         ComponentType[]
     >([]);
+    const { updateRobot } = useRobo();
+
+    let baseUrl = 'http://localhost:3000';
+    if (process.env.NODE_ENV !== 'development') {
+        baseUrl = 'https://anaju-txikia.onrender.com';
+    }
+    const navigate = useNavigate();
     const handleClick = (component: ComponentType) => {
         if (
             component.slots +
@@ -26,7 +35,37 @@ export const UpgradeForm: React.FC<{
             return;
         }
 
+        const robot = JSON.parse(localStorage.getItem('targetRobot')!);
+        robot.velocity += component.velocity;
+        robot.endurance += component.endurance;
+        localStorage.setItem('targetRobot', JSON.stringify(robot));
+
         setSelectedComponents([...selectedComponents, component]);
+    };
+
+    type robotType = {
+        name: string;
+        velocity: number;
+        endurance: number;
+        manufacturer: string;
+        id: number;
+    };
+
+    const handlePatch = async () => {
+        const response = await fetch(`${baseUrl}/hired`);
+        const robots = await response.json();
+        const robotHired = JSON.parse(localStorage.getItem('targetRobot')!);
+        const targetRobot = robots.find(
+            (robot: robotType) => robotHired.name === robot.name
+        );
+        if (targetRobot) {
+            await updateRobot(targetRobot.id, robotHired);
+            await localStorage.setItem(
+                'RobotDetails',
+                JSON.stringify(targetRobot)
+            );
+            await navigate('/details');
+        }
     };
 
     return (
@@ -38,8 +77,8 @@ export const UpgradeForm: React.FC<{
             <div className="robotInfoH">
                 <RobotInfo />
                 <button
-                    onClick={() => onSubmit(selectedComponents)}
-                    className="HireButton"
+                    onClick={handlePatch}
+                    className="HireButton submitUpgrades"
                 >
                     Submit Upgrades
                 </button>

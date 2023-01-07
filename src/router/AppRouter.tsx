@@ -4,7 +4,7 @@ import { RoboCreator } from '../components/RobotForm/roboCreatorPage';
 import { RobotInfo } from '../components/RobotForm/RobotInfo';
 import { Cart } from '../components/cart/Cart';
 import { Details } from '../components/Details/DetailsPage';
-
+import { UpgraderPage } from '../components/Upgrader/UpgraderPage';
 export const AppRouter = () => {
     return (
         <>
@@ -15,6 +15,7 @@ export const AppRouter = () => {
                 <Route path="/robot-info" element={<RobotInfo />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/details" element={<Details />} />
+                <Route path="/upgrader" element={<UpgraderPage />} />
             </Routes>
         </>
     );

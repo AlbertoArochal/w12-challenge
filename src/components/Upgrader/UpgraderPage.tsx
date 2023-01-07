@@ -1,6 +1,5 @@
 import { Header } from '../Header/header';
-import { UpgradeForm } from './upgradeForm';
-import { ComponentType } from './upgradeForm';
+import { UpgradeForm, ComponentType } from './upgradeForm';
 export const UpgraderPage = () => {
     const handleSubmit = (components: ComponentType[]) => {
         console.log(components);

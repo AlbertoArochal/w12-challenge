@@ -60,10 +60,7 @@ export const UpgradeForm: React.FC<{
         );
         if (targetRobot) {
             await updateRobot(targetRobot.id, robotHired);
-            await localStorage.setItem(
-                'RobotDetails',
-                JSON.stringify(targetRobot)
-            );
+            localStorage.setItem('RobotDetails', JSON.stringify(targetRobot));
             await navigate('/details');
         }
     };

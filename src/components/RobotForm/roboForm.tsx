@@ -13,7 +13,7 @@ export const RoboForm = () => {
 
     const { addCart } = useHire();
     const handleFormSubmit = async (data: any) => {
-        await onSubmit(data);
+        onSubmit(data);
         const robot = JSON.parse(localStorage.getItem('robot')!);
         addCart(robot);
         setRedirect(true);

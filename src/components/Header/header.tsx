@@ -1,6 +1,5 @@
 import { HeaderMenu } from './headerMenu';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 export const Header = () => {
     const sections = ['HOME', 'CATALOGUE', 'ROBOCREATOR', 'CART'];
     const location = useLocation();

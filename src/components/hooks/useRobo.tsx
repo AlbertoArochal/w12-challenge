@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { robotType } from '../RobotList/RobotList';
+import { RobotType } from '../RobotList/RobotList';
 
 export const useRobo = () => {
     const [robo, setRobo] = useState([]);
@@ -9,7 +9,7 @@ export const useRobo = () => {
         baseUrl = 'https://anaju-txikia.onrender.com';
     }
 
-    const addRobot = async (newRobot: robotType) => {
+    const addRobot = async (newRobot: RobotType) => {
         await fetch(`${baseUrl}/robots`, {
             method: 'POST',
             headers: {
@@ -25,7 +25,7 @@ export const useRobo = () => {
         });
     };
 
-    const updateRobot = async (robotId: string, newRobot: robotType) => {
+    const updateRobot = async (robotId: string, newRobot: RobotType) => {
         await fetch(`${baseUrl}/hired/${robotId}`, {
             method: 'PATCH',
             headers: {

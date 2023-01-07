@@ -1,5 +1,5 @@
-import { robotType } from './RobotList';
-export const deities: robotType[] = [
+import { RobotType } from './RobotList';
+export const deities: RobotType[] = [
     {
         name: 'Abhoth',
         velocity: 2,

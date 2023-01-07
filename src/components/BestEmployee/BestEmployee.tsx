@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { employeeType } from './EmployeeTyoe';
+import { EmployeeType } from './EmployeeTyoe';
 export const BestEmployee = () => {
     const SelectBestEmp = (data: any) => {
         const randomIndex = Math.floor(Math.random() * data.length);
@@ -7,7 +7,7 @@ export const BestEmployee = () => {
         return data[randomIndex];
     };
     const FetchBestEmployee = () => {
-        const [bestEmployee, setBestEmployee] = useState<employeeType>();
+        const [bestEmployee, setBestEmployee] = useState<EmployeeType>();
         const [error, setError] = useState(null);
         const [isLoading, setIsLoading] = useState(false);
 

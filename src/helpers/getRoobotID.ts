@@ -1,6 +1,6 @@
-import { robotType } from '../components/RobotList/RobotList';
+import { RobotType } from '../components/RobotList/RobotList';
 
-export const getRobotId = (robot: robotType) => {
+export const getRobotId = (robot: RobotType) => {
     let id = 0;
     for (let i = 0; i < robot.name.length; i++) {
         id += robot.name.charCodeAt(i);

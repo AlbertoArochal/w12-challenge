@@ -1,4 +1,4 @@
-export interface employeeType {
+export interface EmployeeType {
     name: string;
     velocity: number;
     endurance: number;

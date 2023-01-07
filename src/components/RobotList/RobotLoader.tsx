@@ -1,17 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useRobo } from '../hooks/useRobo';
 import { deities } from './StaffModel';
-import { robotType } from './RobotList';
-import { useCallback } from 'react';
+import { RobotType } from './RobotList';
 
 export const RobotLoader = () => {
     const { addRobot } = useRobo();
 
     const loadRobots = useCallback(async () => {
-        const readRobotsFromFile = (array: robotType[]) => {
+        const readRobotsFromFile = (array: RobotType[]) => {
             const robots: any = [];
             deities.map((deity) => {
-                const robot: robotType = {
+                const robot: RobotType = {
                     name: deity.name,
                     velocity: deity.velocity,
                     endurance: deity.endurance,
@@ -25,7 +24,7 @@ export const RobotLoader = () => {
 
         let baseUrl = 'http://localhost:3000';
         if (process.env.NODE_ENV !== 'development') {
-            baseUrl = 'https://anaju-txikia.onrender.com'; // use a different base URL in production
+            baseUrl = 'https://anaju-txikia.onrender.com';
         }
         const response = await fetch(`${baseUrl}/robots`);
         const data = await response.json();

@@ -2,7 +2,7 @@ import { RobotGenerator } from '../Robot/Robot';
 import { useEffect } from 'react';
 import { roboScroll } from '../../helpers/roboScroll';
 
-export interface robotType {
+export interface RobotType {
     name: string;
     velocity: number;
     endurance: number;
@@ -11,15 +11,10 @@ export interface robotType {
 }
 
 export interface RobotListProps {
-    robots: robotType[];
+    robots: RobotType[];
 }
 
 export const RobotList = (props: any) => {
-    // manejador del evento click del botón
-    const handleButtonClick = () => {
-        props.onReload(); // llamamos a la función pasada como prop desde el componente padre
-    };
-
     useEffect(() => {
         if (document.querySelector('.robolist')) {
             roboScroll();

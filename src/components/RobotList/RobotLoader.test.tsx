@@ -1,16 +1,14 @@
-import { render, waitFor, act } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { RobotLoader } from './RobotLoader';
 
 describe('RobotLoader', () => {
     it('should load robots from the API if there are no robots in the state', async () => {
-        // Arrange
         const fetchMock = jest.fn().mockResolvedValueOnce({
             json: jest.fn().mockResolvedValueOnce([]),
         });
         (global as any).fetch = fetchMock;
 
-        // Act
         render(<RobotLoader />);
         await waitFor(() => expect(fetchMock).toHaveBeenCalledTimes(1));
     });

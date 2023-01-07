@@ -161,14 +161,6 @@
       "endurance": 2,
       "created_at": "2023-01-07",
       "manufacturer": "Alberto"
-    },
-    {
-      "name": "Petunia Pork",
-      "id": 1170,
-      "velocity": 11,
-      "endurance": 9,
-      "created_at": "2023-01-07",
-      "manufacturer": "Alberto"
     }
   ]
 }

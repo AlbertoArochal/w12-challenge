@@ -4,7 +4,7 @@ export const RobotInfo = () => {
     const location = useLocation();
     let newRobot;
     if (location.pathname === '/upgrader') {
-        newRobot = JSON.parse(localStorage.getItem('TargetRobot')!);
+        newRobot = JSON.parse(localStorage.getItem('targetRobot')!);
     } else {
         newRobot = JSON.parse(localStorage.getItem('robot')!);
     }

@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { HireButton } from '../buttons/Hire';
 import { Fire } from '../buttons/Fire';
 import { DetailsButton } from '../buttons/Details';
+import { UpgradeButton } from '../buttons/UpgradeButton';
 
 export interface RobotGeneratorProps {
     name: string;
@@ -54,7 +55,14 @@ export const RobotGenerator = (props: RobotGeneratorProps) => {
             </div>
             <div className="HiredButtons">
                 {<Fire name={name} />}
-                <button className="HiredButton">Upgrade</button>
+                <UpgradeButton
+                    name={name}
+                    endurance={endurance}
+                    velocity={velocity}
+                    created_at={created_at}
+                    manufacturer={manufacturer}
+                />
+
                 {location.pathname !== '/details' && (
                     <DetailsButton name={name} />
                 )}

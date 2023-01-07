@@ -195,6 +195,174 @@ body {
     cursor: pointer;
 }
 
+.componentMenu {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    width: 60%;
+    height: 70%;
+    margin: 3rem auto;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 89% 86%) 0%,
+        hsl(243deg 57% 85%) 11%,
+        hsl(249deg 29% 83%) 22%,
+        hsl(319deg 6% 82%) 33%,
+        hsl(43deg 26% 81%) 44%,
+        hsl(49deg 47% 79%) 56%,
+        hsl(52deg 65% 77%) 67%,
+        hsl(53deg 79% 75%) 78%,
+        hsl(54deg 91% 71%) 89%,
+        hsl(55deg 100% 66%) 100%
+    );
+}
+
+.componentDetails {
+    display: flexbox;
+    border: 2px solid black;
+    padding: 2%;
+    font-size: small;
+    font-family: poppins, sans-serif;
+    background-color: #f8dffa;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+}
+
+.componentDetails button {
+    background-color: #effc3c;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    position: relative;
+    height: 70%;
+    width: 70%;
+    cursor: pointer;
+}
+
+.componentDetails button:hover {
+    background-color: #f8dffa;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+}
+
+.componentDetails button:active {
+    background-color: #effc3c;
+    border: 2px solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    transform: scale(0.99);
+}
+
+.componentDetails span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: poppins, sans-serif;
+}
+
+.shopTitleContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: red;
+    font-size: 1.5rem;
+}
+.robotInfoH .newHired .RobotHired .RobotPicture {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    padding: 0;
+}
+
+.robotInfoH .newHired .RobotHired .RobotPicture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.robotInfoH .newHired .KeepCreating {
+    display: none;
+}
+
+.robotInfoH .newHired .RobotHired {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    font-size: medium;
+    background-color: #f8dffa;
+}
+
+.robotInfoH .newHired .RobotHired .RobotName {
+    display: none;
+}
+
+.robotInfoH .newHired .RobotHired .RobotStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    font-size: medium;
+}
+
+.robotInfoH .newHired {
+    top: 0;
+}
+
+.robotInfoH .newHired .RobotHired .RobotStats > div:nth-child(-n + 4) {
+    display: none;
+    margin: 1rem;
+}
+
+.robotInfoH .newHired .RobotHired .RobotStats > div:nth-child(-n + 2) {
+    display: flex;
+}
+
+.shopTitle {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    border: ;
+    color: black;
+}
+
+.robotInfoH {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    font-size: medium;
+}
+
 .KeepCreating:hover {
     background-color: #f8dffa;
     border: 2px solid black;

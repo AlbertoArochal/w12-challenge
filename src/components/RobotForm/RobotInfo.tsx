@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 export const RobotInfo = () => {
-    const newRobot = JSON.parse(localStorage.getItem('robot')!);
+    const newRobot = JSON.parse(localStorage.getItem('targetRobot')!);
     const picture = `https://robohash.org/${newRobot.name}?set=set3`;
     const navigate = useNavigate();
     return (

@@ -1,8 +1,15 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 export const RobotInfo = () => {
-    const newRobot = JSON.parse(localStorage.getItem('targetRobot')!);
-    const picture = `https://robohash.org/${newRobot.name}?set=set3`;
     const navigate = useNavigate();
+    const location = useLocation();
+    let newRobot;
+    if (location.pathname === '/upgrader') {
+        newRobot = JSON.parse(localStorage.getItem('TargetRobot')!);
+    } else {
+        newRobot = JSON.parse(localStorage.getItem('robot')!);
+    }
+    const picture = `https://robohash.org/${newRobot.name}?set=set3`;
+
     return (
         <div className="newHired">
             <div className="RobotHired">

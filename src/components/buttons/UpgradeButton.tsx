@@ -10,7 +10,6 @@ export type propsType = {
 
 export const UpgradeButton = (props: propsType) => {
     const navigate = useNavigate();
-    const { name, velocity, endurance, created_at, manufacturer } = props;
     let baseUrl = 'http://localhost:3000';
     if (process.env.NODE_ENV !== 'development') {
         baseUrl = 'https://anaju-txikia.onrender.com';

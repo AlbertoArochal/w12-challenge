@@ -1,4 +1,5 @@
 import { roboScroll } from './roboScroll';
+import { RoboList } from '../components/RobotList/Catalogue';
 
 describe('RobotScroll function tests', () => {
     test('Test for eventListeners', () => {

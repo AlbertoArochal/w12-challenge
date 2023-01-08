@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-type HeaderMenuProps = {
+export type HeaderMenuProps = {
     sections?: string[];
 };
 

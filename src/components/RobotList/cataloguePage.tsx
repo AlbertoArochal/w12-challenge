@@ -1,7 +1,7 @@
 import { Header } from '../Header/header';
 import { RoboList } from './Catalogue';
 import { useRobo } from '../hooks/useRobo';
-import { RobotLoader } from './robotLoader';
+import { RobotCargador } from './robocargador';
 
 const sections: any[] = [];
 export const Catalogue = (props: any) => {
@@ -11,7 +11,7 @@ export const Catalogue = (props: any) => {
         <>
             <Header sections={sections} />
             <RoboList robots={robo} />
-            <RobotLoader />
+            <RobotCargador />
         </>
     );
 };

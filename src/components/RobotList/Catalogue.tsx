@@ -1,7 +1,7 @@
 import { RobotGenerator } from '../Robot/Robot';
 import { useEffect } from 'react';
 import { roboScroll } from '../../Helpers/roboScroll';
-
+import { RobotCargador } from './robocargador';
 export interface RobotType {
     name: string;
     velocity: number;

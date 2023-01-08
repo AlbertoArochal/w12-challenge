@@ -14,7 +14,7 @@ export interface RobotListProps {
     robots: RobotType[];
 }
 
-export const RobotList = (props: any) => {
+export const RoboList = (props: any) => {
     useEffect(() => {
         if (document.querySelector('.robolist')) {
             roboScroll();

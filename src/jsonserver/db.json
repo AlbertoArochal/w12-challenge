@@ -17,7 +17,7 @@
             "id": 11234
         },
         {
-            "name": "Aletheia",
+            "name": "Aletheiaa",
             "velocity": 1,
             "endurance": 3,
             "created_at": "1922-07-27",
@@ -38,11 +38,11 @@
             "endurance": 6,
             "created_at": "1928-03-11",
             "manufacturer": "Robotentacle Inc.",
-            "id": 1057
+            "id": 10572
         },
         {
             "name": "The Blackness",
-            "velocity": 3,
+            "velocity": 7,
             "endurance": 4,
             "created_at": "1953-09-23",
             "manufacturer": "Robotentacle Inc.",

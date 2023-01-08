@@ -1,7 +1,7 @@
 import { RobotType } from './robotList';
 export const deities: RobotType[] = [
     {
-        name: 'Abhoth',
+        name: 'Abhothh',
         velocity: 2,
         endurance: 7,
         created_at: '1961-06-06',

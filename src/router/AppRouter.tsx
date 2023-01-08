@@ -1,10 +1,10 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { Catalogue } from '../Components/RobotList/cataloguePage';
-import { RoboCreator } from '../Components/RobotForm/roboCreatorPage';
-import { RobotInfo } from '../Components/RobotForm/RobotInfo';
-import { Cart } from '../Components/Cart/Cart';
-import { Details } from '../Components/Details/DetailsPage';
-import { UpgraderPage } from '../Components/Upgrader/UpgraderPage';
+import { Catalogue } from '../components/RobotList/cataloguePage';
+import { RoboCreator } from '../components/RobotForm/roboCreatorPage';
+import { RobotInfo } from '../components/RobotForm/RobotInfo';
+import { Cart } from '../components/Cart/Cart';
+import { Details } from '../components/Details/DetailsPage';
+import { UpgraderPage } from '../components/Upgrader/UpgraderPage';
 export const AppRouter = () => {
     return (
         <>

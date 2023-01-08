@@ -1,7 +1,7 @@
-import { Header } from './Components/Header/header';
+import { Header } from './components/Header/header';
 import { AppRouter } from './router/AppRouter';
-import { MainPage } from './Components/main/mainpage';
-import { Footer } from './Components/Footer/Footer';
+import { MainPage } from './components/main/mainpage';
+import { Footer } from './components/Footer/Footer';
 export const RoboStore = () => {
     return (
         <>

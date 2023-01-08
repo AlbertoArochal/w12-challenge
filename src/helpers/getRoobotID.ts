@@ -1,4 +1,4 @@
-import { RobotType } from '../Components/RobotList/robotList';
+import { RobotType } from '../components/RobotList/robotList';
 
 export const getRobotId = (robot: RobotType) => {
     let id = 0;

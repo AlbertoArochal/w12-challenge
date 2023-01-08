@@ -11,16 +11,17 @@ describe('The component is rendering', () => {
 
 describe('BestEmployee', () => {
     it('should make a GET request to baseUrl', () => {
-        // Arrange
         fetchMock.mockResponse(
             JSON.stringify([{ name: 'Robot1' }, { name: 'Robot2' }])
         );
-        jest.spyOn(global, 'fetch').mockImplementation(fetchMock);
+        jest.spyOn(global, 'fetch').mockImplementation(
+            (input: any, init?: RequestInit) => {
+                return fetchMock(input, init);
+            }
+        );
 
-        // Act
         render(<BestEmployee />);
 
-        // Assert
         expect(global.fetch).toHaveBeenCalledWith(
             'https://anaju-txikia.onrender.com/robots'
         );

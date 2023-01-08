@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { onSubmit } from '../../helpers/onSubmit';
+import { onSubmit } from '../../Helpers/onSubmit';
 import { useHire } from '../hooks/useHire';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';

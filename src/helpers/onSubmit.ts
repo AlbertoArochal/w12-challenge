@@ -1,7 +1,6 @@
 import { getRobotId } from './getRoobotID';
 
 export const onSubmit = (data: any) => {
-    console.log(data);
     const createValues = (name: string) => {
         const velocity = (name.charCodeAt(0) % 10) + 1;
         const endurance =

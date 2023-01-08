@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { RobotType } from '../RobotList/RobotList';
+import { RobotType } from '../RobotList/robotList';
 
 export const useRobo = () => {
     const [robo, setRobo] = useState([]);

@@ -1,5 +1,5 @@
 import { Header } from '../Header/header';
-import { RobotList } from './robotList';
+import { RoboList } from './Catalogue';
 import { useRobo } from '../hooks/useRobo';
 import { RobotLoader } from './robotLoader';
 
@@ -10,7 +10,7 @@ export const Catalogue = (props: any) => {
     return (
         <>
             <Header sections={sections} />
-            <RobotList robots={robo} />
+            <RoboList robots={robo} />
             <RobotLoader />
         </>
     );

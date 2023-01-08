@@ -1,5 +1,6 @@
 import { BestEmployee } from './BestEmployee';
 import { screen, render } from '@testing-library/react';
+import fetchMock from 'jest-fetch-mock';
 
 describe('The component is rendering', () => {
     it('should render the component', () => {
@@ -11,11 +12,10 @@ describe('The component is rendering', () => {
 describe('BestEmployee', () => {
     it('should make a GET request to baseUrl', () => {
         // Arrange
-        const mockFetchPromise = Promise.resolve({
-            json: () =>
-                Promise.resolve([{ name: 'Robot1' }, { name: 'Robot2' }]),
-        });
-        jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
+        fetchMock.mockResponse(
+            JSON.stringify([{ name: 'Robot1' }, { name: 'Robot2' }])
+        );
+        jest.spyOn(global, 'fetch').mockImplementation(fetchMock);
 
         // Act
         render(<BestEmployee />);

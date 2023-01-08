@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { Catalogue } from '../components/RobotList/cataloguePage';
 import { RoboCreator } from '../components/RobotForm/roboCreatorPage';
 import { RobotInfo } from '../components/RobotForm/RobotInfo';
-import { Cart } from '../components/Cart/Cart';
+import { Cart } from '../components/cart/Cart';
 import { Details } from '../components/Details/DetailsPage';
 import { UpgraderPage } from '../components/Upgrader/UpgraderPage';
 export const AppRouter = () => {

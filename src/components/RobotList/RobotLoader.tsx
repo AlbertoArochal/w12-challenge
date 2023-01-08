@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from 'react';
 import { useRobo } from '../hooks/useRobo';
-import { deities } from './StaffModel';
-import { RobotType } from './RobotList';
+import { deities } from './staffModel';
+import { RobotType } from './robotList';
 
 export const RobotLoader = () => {
     const { addRobot } = useRobo();

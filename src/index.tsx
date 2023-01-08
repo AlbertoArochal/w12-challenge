@@ -4,7 +4,6 @@ import './index.css';
 import { RoboStore } from './Store';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { MainPage } from './components/main/mainpage';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
-import { HireButton } from '../buttons/Hire';
-import { Fire } from '../buttons/Fire';
-import { DetailsButton } from '../buttons/Details';
-import { UpgradeButton } from '../buttons/UpgradeButton';
+import { HireButton } from '../Buttons/Hire';
+import { Fire } from '../Buttons/Fire';
+import { DetailsButton } from '../Buttons/Details';
+import { UpgradeButton } from '../Buttons/UpgradeButton';
 
 export interface RobotGeneratorProps {
     name: string;

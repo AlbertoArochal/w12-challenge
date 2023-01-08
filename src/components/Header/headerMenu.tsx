@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
-interface HeaderMenuProps {
-    sections: string[];
-}
+type HeaderMenuProps = {
+    sections?: string[];
+};
 
 export const HeaderMenu = (props: HeaderMenuProps) => {
     return (
         <nav className="Headernav">
-            {props.sections.map((section: string, index: number) => (
+            {props!.sections!.map((section: string, index: number) => (
                 <Link
                     className="section"
                     key={index}

@@ -1,6 +1,5 @@
-import { Details } from './DetailsPage';
+import { RoboCreator } from './roboCreatorPage';
 import ShallowRenderer from 'react-test-renderer/shallow';
-
 jest.mock('react-router-dom', () => {
     let counter = 0;
     return {
@@ -21,7 +20,7 @@ jest.mock('react-router-dom', () => {
 });
 test('Details renders DetailsLoader component', () => {
     const utils = ShallowRenderer.createRenderer();
-    utils.render(<Details />);
+    utils.render(<RoboCreator />);
     const view = utils.getRenderOutput();
 
     expect(view.type).toBe('div');

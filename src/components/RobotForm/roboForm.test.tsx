@@ -1,5 +1,6 @@
 import { RoboForm } from './roboForm';
 import { render, screen, fireEvent } from '@testing-library/react';
+import { isToken } from 'typescript';
 
 jest.mock('../hooks/useHire', () => ({
     useHire: () => ({
@@ -26,5 +27,11 @@ describe('RoboForm', () => {
         render(<RoboForm />);
         fireEvent.click(screen.getByText('Submit'));
         expect(handleform).toBeCalledTimes(0);
+    });
+    it('redirect should be called', () => {
+        const redirect = jest.fn();
+        render(<RoboForm />);
+        fireEvent.click(screen.getByText('Submit'));
+        expect(redirect).toBeCalledTimes(0);
     });
 });

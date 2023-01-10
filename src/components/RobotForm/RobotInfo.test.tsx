@@ -21,11 +21,11 @@ const localStorageMock = (function () {
     };
 
     return {
-        getItem(key) {
+        getItem(key: any) {
             return store[key];
         },
 
-        setItem(key, value) {
+        setItem(key: any, value: any) {
             store[key] = value;
         },
 
@@ -33,7 +33,7 @@ const localStorageMock = (function () {
             store = {};
         },
 
-        removeItem(key) {
+        removeItem(key: any) {
             delete store[key];
         },
 

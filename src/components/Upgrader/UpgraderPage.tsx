@@ -6,9 +6,9 @@ export const UpgraderPage = () => {
     };
 
     return (
-        <>
+        <div>
             <Header />
             <UpgradeForm onSubmit={handleSubmit} />
-        </>
+        </div>
     );
 };

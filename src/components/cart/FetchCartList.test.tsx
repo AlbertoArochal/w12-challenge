@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { RobotGenerator } from '../Robot/Robot';
 
 describe('FetchCartList', () => {
-    it('should render', () => {
+    it('should render the component', () => {
         render(<FetchCartList />);
         expect(screen.getByText('Loading Roboservants...')).toBeInTheDocument();
     });

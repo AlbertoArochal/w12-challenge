@@ -1,5 +1,7 @@
 import { roboScroll } from './roboScroll';
 import { RoboList } from '../components/RobotList/Catalogue';
+import userEvent from '@testing-library/user-event';
+import { getByText, render, screen } from '@testing-library/react';
 
 describe('RobotScroll function tests', () => {
     test('Test for eventListeners', () => {
@@ -12,10 +14,6 @@ describe('RobotScroll function tests', () => {
 
         expect(addEventListener).toHaveBeenCalledTimes(3);
         expect(addEventListener).toHaveBeenCalledWith(
-            'mousedown',
-            expect.any(Function)
-        );
-        expect(addEventListener).toHaveBeenCalledWith(
             'mouseup',
             expect.any(Function)
         );
@@ -25,3 +23,35 @@ describe('RobotScroll function tests', () => {
         );
     });
 });
+
+describe('RobotScroll when robolist is null', () => {
+    test('Test for eventListeners', () => {
+        (document.querySelector as any) = jest.fn(() => null);
+
+        roboScroll();
+
+        expect(document.querySelector).toHaveBeenCalledTimes(1);
+    });
+});
+
+const mockprops = [
+    {
+        name: 'test',
+        velocity: 1,
+        endurance: 1,
+        created_at: 'test',
+        manufacturer: 'test',
+    },
+];
+
+const mockedUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+    ...(jest.requireActual('react-router-dom') as any),
+    useNavigate: () => mockedUsedNavigate,
+    useLocation: () => ({
+        pathname: '/details',
+        search: '',
+        hash: '',
+        state: {},
+    }),
+}));

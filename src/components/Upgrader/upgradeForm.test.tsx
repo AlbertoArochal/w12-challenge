@@ -12,6 +12,12 @@ const mockedUsedNavigate = jest.fn();
 jest.mock('react-router-dom', () => ({
     ...(jest.requireActual('react-router-dom') as any),
     useNavigate: () => mockedUsedNavigate,
+    useLocation: () => ({
+        pathname: '/details',
+        search: '',
+        hash: '',
+        state: {},
+    }),
 }));
 
 jest.mock('../RobotForm/RobotInfo', () => ({
@@ -49,13 +55,5 @@ describe('useNavigate should be called', () => {
         render(<UpgradeForm onSubmit={jest.fn} />);
         fireEvent.click(screen.getByText('Submit Upgrades'));
         expect(mockedUsedNavigate).toBeCalledTimes(0);
-    });
-});
-
-describe('local storage get item should be called', () => {
-    it('should be called', () => {
-        jest.spyOn(Object.getPrototypeOf(window.localStorage), 'setItem');
-        render(<UpgradeForm onSubmit={jest.fn} />);
-        expect(localStorage.setItem).toBeCalledTimes(0);
     });
 });

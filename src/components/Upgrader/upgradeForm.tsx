@@ -101,7 +101,10 @@ export const UpgradeForm: React.FC<{
                             {' '}
                             <span> Description: </span> {component.description}
                         </p>
-                        <button onClick={() => handleClick(component)}>
+                        <button
+                            data-testid={`select-button-${component.name}`}
+                            onClick={() => handleClick(component)}
+                        >
                             Select
                         </button>
                     </div>

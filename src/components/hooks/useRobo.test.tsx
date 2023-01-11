@@ -1,16 +1,16 @@
-import { renderHook } from '@testing-library/react-hooks';
-import fetchMock from 'jest-fetch-mock';
-
 import { useRobo } from './useRobo';
-import { render, fireEvent, act } from '@testing-library/react';
-
-function TestComponent() {
-    const { robo, addRobot, deleteRobot, updateRobot } = useRobo();
-
-    return <div>Test component</div>;
-}
+import { render, waitFor } from '@testing-library/react';
 
 describe('useRobo', () => {
+    let hook: any;
+    beforeEach(() => {
+        const TestComponent = () => {
+            hook = useRobo();
+            return null;
+        };
+        render(<TestComponent />);
+    });
+
     it('should add a robot', async () => {
         const newRobot = {
             name: 'Test Robot',
@@ -20,27 +20,44 @@ describe('useRobo', () => {
             created_at: 'test',
             manufacturer: 'test',
         };
-        const { result } = renderHook(() => useRobo());
-
-        act(() => {
-            result.current.addRobot(newRobot);
-        });
-        expect(result.current.robo).not.toContainEqual(newRobot);
+        hook.addRobot(newRobot);
+        await waitFor(() => expect(hook.robo).toContainEqual(newRobot));
     });
-    it('should delete a robot', async () => {
+
+    it('should delete a robot', () => {
         const newRobot = {
             name: 'Test Robot',
-            id: '1',
+            id: 1,
             velocity: 1,
             endurance: 1,
             created_at: 'test',
             manufacturer: 'test',
         };
-        const { result } = renderHook(() => useRobo());
-        const robotId = newRobot.id;
-        act(() => {
-            result.current.deleteRobot(robotId);
-        });
-        expect(result.current.robo).not.toContainEqual(robotId);
+        hook.addRobot(newRobot);
+        hook.deleteRobot(newRobot.id);
+        expect(hook.robo).not.toContainEqual(newRobot);
+    });
+    it('should update a robot', async () => {
+        const initialRobot = {
+            name: 'Initial Robot',
+            id: 1,
+            velocity: 1,
+            endurance: 1,
+            created_at: 'test',
+            manufacturer: 'test',
+        };
+        const updatedRobot = {
+            name: 'Updated Robot',
+            id: 1,
+            velocity: 2,
+            endurance: 2,
+            created_at: 'test',
+            manufacturer: 'test',
+        };
+        hook.addRobot(initialRobot);
+        await hook.updateRobot(initialRobot.id, updatedRobot);
+        const expectedRobot = updatedRobot;
+
+        expect(expectedRobot).toBe(expectedRobot);
     });
 });

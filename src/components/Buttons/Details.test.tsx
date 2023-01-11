@@ -114,13 +114,13 @@ describe('DetailsButton component', () => {
     });
 
     test('should save robot details to localStorage', async () => {
-        const { getByText } = render(<DetailsButton name={robot.name} />);
+        render(<DetailsButton name={robot.name} />);
 
         global.fetch = jest.fn().mockResolvedValue({
             json: () => Promise.resolve([robot]),
         });
 
-        fireEvent.click(getByText('Details'));
+        fireEvent.click(screen.getByText('Details'));
 
         const savedRobot = JSON.parse(JSON.stringify(robot));
         expect(savedRobot).toEqual(robot);

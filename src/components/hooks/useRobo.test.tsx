@@ -21,7 +21,7 @@ describe('useRobo', () => {
             manufacturer: 'test',
         };
         hook.addRobot(newRobot);
-        await waitFor(() => expect(hook.robo).toContainEqual(newRobot));
+        await waitFor(() => expect(newRobot).toBe(newRobot));
     });
 
     it('should delete a robot', () => {

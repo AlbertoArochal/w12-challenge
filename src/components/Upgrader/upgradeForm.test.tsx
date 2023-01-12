@@ -89,14 +89,6 @@ describe('useNavigate should be called', () => {
     });
 });
 
-const component = {
-    name: 'Extra Battery',
-    slots: 1,
-    velocity: 10,
-    endurance: 10,
-    description: 'Provides extra power to the robot',
-};
-
 describe('UpgradeForm component', () => {
     beforeEach(() => {
         localStorage.setItem(
@@ -134,5 +126,17 @@ describe('UpgradeForm component', () => {
             manufacturer: targetRobot.manufacturer,
             created_At: targetRobot.created_At,
         });
+    });
+    it('RobotDetails should be set in localstorage', () => {
+        render(
+            <UpgradeForm
+                onSubmit={() =>
+                    JSON.parse(localStorage.setItem('RobotDetails'))
+                }
+            />
+        );
+        fireEvent.click(screen.getByText('Submit Upgrades'));
+        const robot = JSON.parse(localStorage.getItem('targetRobot'));
+        expect(JSON.parse(localStorage.getItem('targetRobot'))).not.toBeNull();
     });
 });

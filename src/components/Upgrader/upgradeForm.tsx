@@ -26,15 +26,6 @@ export const UpgradeForm: React.FC<{
     }
     const navigate = useNavigate();
     const handleClick = (component: ComponentType) => {
-        if (
-            component.slots +
-                selectedComponents.reduce((acc, c) => acc + c.slots, 0) >
-            4
-        ) {
-            alert('Your robot has only 4 slots, choose wisely');
-            return;
-        }
-
         const robot = JSON.parse(localStorage.getItem('targetRobot')!);
         robot.velocity += component.velocity;
         robot.endurance += component.endurance;
@@ -61,7 +52,7 @@ export const UpgradeForm: React.FC<{
         if (targetRobot) {
             await updateRobot(targetRobot.id, robotHired);
             localStorage.setItem('RobotDetails', JSON.stringify(targetRobot));
-            await navigate('/details');
+            navigate('/details');
         }
     };
 

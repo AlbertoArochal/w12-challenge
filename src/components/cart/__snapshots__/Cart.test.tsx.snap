@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart should render 1`] = `
+<div>
+  <div>
+    Header
+  </div>
+  <div>
+    FetchCartList
+  </div>
+</div>
+`;

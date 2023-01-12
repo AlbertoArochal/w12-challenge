@@ -2,6 +2,10 @@ import { FetchCartList } from './FetchCartList';
 import { render, screen } from '@testing-library/react';
 import { RobotGenerator } from '../Robot/Robot';
 
+jest.mock('../Robot/Robot', () => ({
+    RobotGenerator: () => <div>RobotGenerator</div>,
+}));
+
 describe('FetchCartList', () => {
     it('should render the component', () => {
         render(<FetchCartList />);

@@ -8,25 +8,25 @@ export const roboScroll = (isDragging = false) => {
         let initialX: number;
         let xOffset = 0;
 
-        roboList!.addEventListener('mousedown', (e: any) => {
+        roboList.addEventListener('mousedown', (e: any) => {
             initialX = e.clientX - xOffset;
             isDragging = true;
         });
 
-        roboList!.addEventListener('mouseup', () => {
+        roboList.addEventListener('mouseup', () => {
             isDragging = false;
         });
 
-        roboList!.addEventListener('mousemove', (e: any) => {
+        roboList.addEventListener('mousemove', (e: any) => {
             if (isDragging) {
                 e.preventDefault();
                 currentX = e.clientX - initialX;
                 xOffset = currentX;
-                roboList!.style.transform = `translateX(${currentX}px)`;
-                roboList!.style.cursor = 'grabbing';
+                roboList.style.transform = `translateX(${currentX}px)`;
+                roboList.style.cursor = 'grabbing';
             }
             if (!isDragging) {
-                roboList!.style.cursor = 'grab';
+                roboList.style.cursor = 'grab';
             }
         });
     }

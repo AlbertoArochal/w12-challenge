@@ -7,7 +7,7 @@ export type HeaderMenuProps = {
 export const HeaderMenu = (props: HeaderMenuProps) => {
     return (
         <nav className="Headernav">
-            {props!.sections!.map((section: string, index: number) => (
+            {props.sections!.map((section: string, index: number) => (
                 <Link
                     className="section"
                     key={index}

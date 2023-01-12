@@ -17,7 +17,7 @@ export const HireButton = (props: any) => {
     const handleHire = async () => {
         const newRobot = await robot();
         await addCart(newRobot);
-        await navigate('/cart');
+        navigate('/cart');
     };
 
     return (

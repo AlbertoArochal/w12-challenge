@@ -1,7 +1,6 @@
 import { RoboForm } from './roboForm';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { isToken } from 'typescript';
-
+import { wait } from '@testing-library/user-event/dist/utils';
 jest.mock('../hooks/useHire', () => ({
     useHire: () => ({
         addCart: jest.fn(),
@@ -77,13 +76,13 @@ describe('RoboForm', () => {
         fireEvent.click(screen.getByText('Submit'));
         expect(redirect).toBeCalledTimes(0);
     });
-    it('should get robot object from localstorage', () => {
-        global.fetch = jest.fn().mockResolvedValue({
-            json: () => Promise.resolve([robot]),
-        });
-        localStorage.setItem('robot', JSON.stringify(robot));
 
+    it('should call localStorage.getItem', async () => {
+        const localStorageSpy = jest.spyOn(Storage.prototype, 'getItem');
         render(<RoboForm />);
-        expect(JSON.parse(localStorage.getItem('robot'))).toStrictEqual(robot);
+        fireEvent.click(screen.getByText('Submit'));
+        await wait(() => {
+            expect(localStorageSpy).toHaveBeenCalledWith('robot');
+        });
     });
 });

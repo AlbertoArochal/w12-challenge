@@ -136,7 +136,6 @@ describe('UpgradeForm component', () => {
             />
         );
         fireEvent.click(screen.getByText('Submit Upgrades'));
-        const robot = JSON.parse(localStorage.getItem('targetRobot'));
         expect(JSON.parse(localStorage.getItem('targetRobot'))).not.toBeNull();
     });
 });

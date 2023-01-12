@@ -22,11 +22,11 @@ export const UpgradeButton = (props: propsType) => {
         );
         if (targetRobot) {
             if (targetRobot.manufacturer !== 'Robotentacle Inc.') {
-                await localStorage.setItem(
+                localStorage.setItem(
                     'targetRobot',
                     JSON.stringify(targetRobot)
                 );
-                await navigate('/upgrader');
+                navigate('/upgrader');
             }
         }
     };
